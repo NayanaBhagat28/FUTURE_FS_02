@@ -4,7 +4,7 @@ A modern web application designed to manage client leads efficiently. The system
 
 ## 🌐 Live Demo
 
-https://your-fs2-link.surge.sh
+https://future-fs-02-five-sigma.vercel.app
 
 ## 📌 About This Project
 

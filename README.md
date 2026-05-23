@@ -6,7 +6,7 @@ A modern full-stack Lead Client Management System developed using React.js, Node
 
 ## 🌐 Live Demo
 
-**Live Website:** future-fs-02-five-sigma.vercel.app
+**Live Website:** https://future-fs-02-five-sigma.vercel.app/
 
 **GitHub Repository:** https://github.com/NayanaBhagat28/FUTURE_FS_02
 

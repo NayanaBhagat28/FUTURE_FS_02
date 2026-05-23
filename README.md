@@ -1,111 +1,333 @@
-# 📋 Lead Client Management System
+# 📊 Lead Client Management System (LCM)
 
-A modern web application designed to manage client leads efficiently. The system helps businesses organize, track, and manage customer information through an easy-to-use interface.
+A modern full-stack Lead Client Management System developed using React.js, Node.js, Express.js, and MongoDB. The application helps businesses efficiently manage customer leads, track client interactions, monitor lead status, and improve overall sales workflow.
+
+---
 
 ## 🌐 Live Demo
 
-https://future-fs-02-five-sigma.vercel.app
+**Live Website:**
 
-## 📌 About This Project
+**GitHub Repository:** https://github.com/NayanaBhagat28/FUTURE_FS_02
 
-### Task 2 - Future Interns Full Stack Web Development
+---
 
-Build a Lead Management System that allows users to manage client information, track leads, and organize customer records effectively.
+# 📌 About This Project
 
-## ✨ Features
+### Task 2 – Future Interns Full Stack Web Development
 
-- Add New Leads
-- View Lead Details
-- Update Client Information
-- Delete Leads
-- Search Functionality
-- Responsive User Interface
-- Organized Data Management
-- User-Friendly Dashboard
+The Lead Client Management System (LCM) is designed to simplify the process of capturing, organizing, and managing business leads through a centralized dashboard.
 
-## 🛠 Technologies Used
+The application enables users to:
 
-### Frontend
-- React.js
-- HTML5
-- CSS3
-- JavaScript
+* Store client information securely
+* Manage lead records
+* Track lead progress
+* Update client details
+* Improve customer relationship management
+* Organize sales pipelines effectively
 
-### Backend
-- Node.js
-- Express.js
+---
 
-### Database
-- MongoDB
+# 🎯 Project Objectives
 
-## 📁 Project Structure
+* Centralized lead management
+* Efficient client tracking
+* Improved sales workflow
+* Secure data storage
+* User-friendly dashboard
+* Responsive and modern interface
+
+---
+
+# ✨ Features
+
+## 🎨 Frontend Features
+
+* Modern Responsive UI
+* Interactive Dashboard
+* Lead Management Panel
+* Client Information Dashboard
+* Search Functionality
+* Filter Options
+* Mobile-Friendly Design
+* Reusable React Components
+
+## 🔧 Backend Features
+
+* RESTful API Architecture
+* Express.js Server
+* MongoDB Database Integration
+* CRUD Operations
+* Input Validation
+* Error Handling
+* Secure API Routes
+* Environment Variable Support
+
+---
+
+# 📋 Core Functionalities
+
+## 👤 Client Management
+
+* Add New Clients
+* Edit Client Information
+* Delete Client Records
+* View Client Profiles
+* Store Contact Details
+
+## 📈 Lead Management
+
+* Create New Leads
+* Update Lead Status
+* Track Lead Progress
+* Categorize Leads
+* Manage Sales Pipeline
+
+## 📊 Dashboard Analytics
+
+* Total Leads Count
+* Active Clients Overview
+* Lead Status Monitoring
+* Quick Action Controls
+
+## 🔍 Search & Filters
+
+* Search by Client Name
+* Search by Lead Status
+* Filter Leads
+* Filter Clients
+* Quick Data Retrieval
+
+---
+
+# 🛠 Technologies Used
+
+## Frontend
+
+* React.js
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+* Axios
+* React Router DOM
+
+## Backend
+
+* Node.js
+* Express.js
+
+## Database
+
+* MongoDB Atlas
+* Mongoose
+
+## Additional Packages
+
+* dotenv
+* cors
+* nodemon
+* express-validator
+* helmet
+* concurrently
+
+---
+
+# 📁 Project Structure
 
 ```text
 FUTURE_FS_02/
 │
 ├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+│
 ├── server/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+│
+├── .env
 ├── package.json
 ├── README.md
-└── .env
+└── .gitignore
 ```
 
-## 🚀 Getting Started
+---
 
-### Clone Repository
+# 🚀 Installation
+
+## Clone Repository
 
 ```bash
 git clone https://github.com/NayanaBhagat28/FUTURE_FS_02.git
 ```
 
-### Install Dependencies
+## Install Dependencies
+
+### Root Dependencies
 
 ```bash
 npm install
 ```
 
-### Run Application
+### Client Dependencies
 
 ```bash
-npm start
+cd client
+npm install
 ```
 
-## 📋 Functionalities
+### Server Dependencies
 
-### Lead Management
-- Add New Lead
-- Edit Lead Information
-- Delete Lead
-- View Lead Details
+```bash
+cd ../server
+npm install
+```
 
-### Client Management
-- Store Client Information
-- Manage Contact Details
-- Organize Customer Records
+---
 
-### Dashboard
-- Lead Overview
-- Client Tracking
-- Quick Access Features
+# ⚙️ Environment Variables
 
-## 🎯 Future Improvements
+Create a `.env` file in the root directory.
 
-- Authentication System
-- Role-Based Access
-- Analytics Dashboard
-- Email Notifications
-- Advanced Search & Filters
+```env
+PORT=5000
+NODE_ENV=development
+MONGODB_URI=your_mongodb_connection_string
+```
 
-## 👩‍💻 Author
+---
 
-**Nayana Bhagath**
+# ▶️ Running The Application
 
-Future Interns – Full Stack Web Development
+## Run Backend
 
-GitHub: https://github.com/NayanaBhagat28
+```bash
+npm run server
+```
 
-## ⭐ Support
+## Run Frontend
 
-If you found this project helpful, give it a ⭐ on GitHub.
+```bash
+npm run client
+```
 
-Happy Coding! 🚀
+## Run Both Together
+
+```bash
+npm run dev
+```
+
+Frontend:
+
+```
+http://localhost:3000
+```
+
+Backend:
+
+```
+http://localhost:5000
+```
+
+---
+
+# 🔌 API Endpoints
+
+## Leads
+
+```http
+GET /api/leads
+POST /api/leads
+PUT /api/leads/:id
+DELETE /api/leads/:id
+```
+
+## Clients
+
+```http
+GET /api/clients
+POST /api/clients
+PUT /api/clients/:id
+DELETE /api/clients/:id
+```
+
+---
+
+# 🌐 Deployment
+
+## Frontend Deployment
+
+* GitHub Pages
+* Vercel
+* Netlify
+* Surge
+
+## Backend Deployment
+
+* Render
+* Railway
+* Heroku
+* Vercel
+
+---
+
+# 🔒 Security Features
+
+* Input Validation
+* Environment Variable Protection
+* Secure API Routing
+* MongoDB Security
+* Error Handling Middleware
+* CORS Configuration
+
+---
+
+# 🎯 Future Enhancements
+
+* User Authentication
+* Role-Based Access Control
+* Admin Dashboard
+* Email Notifications
+* Lead Analytics
+* Activity Tracking
+* Report Generation
+* Export Data Functionality
+
+---
+
+## 👨‍💻 Author
+
+**Nayana V**
+- Email: nayanabhagath28@gmail.com
+- LinkedIn: [Nayana Bhagath](https://www.linkedin.com/in/nayana-bhagath-a98b70358)
+- GitHub: [NayanaBhagat28](https://github.com/NayanaBhagat28/)
+
+---
+
+## 📞 Support
+
+If you have any questions or need help, feel free to:
+- Open an issue on GitHub
+- Email me at nayanabhagath28@gmail.com
+- Connect on LinkedIn
+
+---
+
+## ⭐ Show Your Support
+
+If you found this helpful, please give it a ⭐!
+
+---
+
+**Happy Coding! 🚀**
+
